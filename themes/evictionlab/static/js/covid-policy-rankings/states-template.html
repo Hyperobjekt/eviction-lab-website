@@ -13,7 +13,11 @@
       <div class="star" aria-hidden="true"></div>
     </td>
   </tr>
+<<<<<<< HEAD
   <tr class="state-text excerpt-only" data-state="{{stabbrev}}" style="display:none;">
+=======
+  <tr class="state-text excerpt-only" data-state="{{stabbrev}}">
+>>>>>>> jm-policies
     <td colspan="3">
       {{#if stexcerpt}}
         <p class="state-excerpt">
@@ -25,6 +29,7 @@
           {{sttext}}
         </p>
       {{/if}}
+<<<<<<< HEAD
       {{#if until}}
         <p class="expires">
           Protections in effect until {{until}}
@@ -34,11 +39,26 @@
     <td></td>
   </tr>
   <tr class="state-details" data-state="{{stabbrev}}" style="display:none;">
+=======
+        <p class="expires">
+          {{#if until}}
+            Protections start to expire on {{until}}
+          {{/if}}
+        </p>
+    </td>
+    <td></td>
+  </tr>
+  <tr class="state-details excerpt-only" data-state="{{stabbrev}}">
+>>>>>>> jm-policies
     <td colspan="4">
       <button class="expand-state-details btn" data-state="{{stabbrev}}">
         CLICK TO LEARN MORE
       </button>
+<<<<<<< HEAD
       <div class="state-details-list" style="display:none;">
+=======
+      <div class="state-details-list">
+>>>>>>> jm-policies
         {{! no nonpayment }}
         {{#istrue plcnonpbool}}
           <div class="state-policy">

@@ -15,19 +15,38 @@ $el-light-purple: #E7E9FF;
 $el-darkgray: #737373;
 
 .rankings-intro {
+<<<<<<< HEAD
   padding-top: 3rem;
   margin-bottom: 3rem;
+=======
+  padding-top: 4rem;
+  margin-bottom: 1.6rem;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 4rem;
+  }
+>>>>>>> jm-policies
   h2 {
     color: $el-purple;
     font-family: GT-Eesti-Display-Bold, sans-serif;
     font-size: 3.2rem;
     border-top: 5px solid $el-purple;
+<<<<<<< HEAD
     padding-top: 0.5rem;
     padding-bottom: 1rem;
+=======
+    padding-top: 1.6rem;
+    padding-bottom: 2.4rem;
+>>>>>>> jm-policies
   }
   p {
     width: 100%;
     @include media-breakpoint-up(md) {
+<<<<<<< HEAD
+=======
+      width: 100%;
+    }
+    @include media-breakpoint-up(xl) {
+>>>>>>> jm-policies
       width: 50%;
     }
   }
@@ -36,27 +55,62 @@ $el-darkgray: #737373;
 .inline-panel {
   &.states {
     min-height: 100vh;
+<<<<<<< HEAD
+=======
+    @include media-breakpoint-only(md) {
+      margin: auto;
+    }
+>>>>>>> jm-policies
   }
   // States panel
   .states-table {
     margin-bottom: 6rem;
+<<<<<<< HEAD
     table {
       min-height: 100vh;
+=======
+    @include media-breakpoint-up(lg) {
+      min-height: 100vh;
+      // height: 80vh;
+      // overflow-y: scroll;
+      // display: block;
+      // width: 100%;
+      // thead {
+      //   background-color: #fff;
+      //   th {
+      //     background-color: #fff;
+      //     position: sticky;
+      //     top: 0;
+      //   }
+      // }
+>>>>>>> jm-policies
     }
     thead {
       tr {
         vertical-align: center;
+<<<<<<< HEAD
         td {
+=======
+        th {
+>>>>>>> jm-policies
           text-transform: uppercase;
           color: $el-darkgray;
           font-family: GT-Eesti-Display-Bold, sans-serif;
           font-size: 0.8rem;
           @include media-breakpoint-up(md) {
+<<<<<<< HEAD
             font-size: 1.6rem;
           }
           padding: 0.5rem 0.5rem 0 0.5rem;
           @include media-breakpoint-up(md) {
             padding: 0.5rem 2rem 0 2rem;
+=======
+            font-size: 1.5rem;
+          }
+          padding: 0.5rem 0.5rem 0 0.5rem;
+          @include media-breakpoint-up(md) {
+            padding: 0.5rem 2rem 0.8rem 2rem;
+>>>>>>> jm-policies
           }
           height: 4rem;
           text-align: left;
@@ -69,16 +123,26 @@ $el-darkgray: #737373;
             }
           }
           &.stat-one {
+<<<<<<< HEAD
             min-width: 100px;
+=======
+            min-width: 88px;
+>>>>>>> jm-policies
             @include media-breakpoint-up(md) {
               min-width: 120px;
             }
           }
           &.stat-two,
           &.stars {
+<<<<<<< HEAD
             min-width: 110px;
             @include media-breakpoint-up(md) {
               min-width: 140px;
+=======
+            min-width: 96px;
+            @include media-breakpoint-up(md) {
+              min-width: 154px;
+>>>>>>> jm-policies
             }
           }
           .col-title {
@@ -146,7 +210,11 @@ $el-darkgray: #737373;
       tr {
         &.state {
           td {
+<<<<<<< HEAD
             padding: 0.5rem 0.5rem 0 0.5rem;
+=======
+            padding: 1.6rem 0.5rem 0 0.8rem;
+>>>>>>> jm-policies
             @include media-breakpoint-up(md) {
               padding: 1rem 2rem 0 2rem;
             }
@@ -157,7 +225,11 @@ $el-darkgray: #737373;
               font-size: 1.8rem;
             }
             &.state-name {
+<<<<<<< HEAD
               font-size: 1.8rem;
+=======
+              font-size: 1.6rem;
+>>>>>>> jm-policies
               @include media-breakpoint-up(md) {
                 font-size: 2.4rem;
               }
@@ -444,7 +516,14 @@ $el-darkgray: #737373;
         }
         &.state-text { // every other has this bg: #F5F9FF
           td {
+<<<<<<< HEAD
             padding: 0 2rem 0 2rem;
+=======
+            padding: 0.8rem;
+            @include media-breakpoint-up(md) {
+            padding: 0 2rem 0 2rem;
+            }
+>>>>>>> jm-policies
             font-family: Akkurat-regular, sans-serif;
             color: #8A8A8A;
             font-size: 1.4rem;
@@ -452,6 +531,7 @@ $el-darkgray: #737373;
               margin-bottom: 0;
             }
           }
+<<<<<<< HEAD
           p.state-excerpt {
             display: none;
           }
@@ -464,6 +544,29 @@ $el-darkgray: #737373;
               display: none;
             }
           }
+=======
+          // p.state-excerpt {
+          //   display: none;
+          // }
+          // &.excerpt-only {
+            p.state-excerpt {
+              // display: inline;
+              max-height: 400px;
+              overflow-y: hidden;
+              margin-top: 1.6rem;
+              margin-bottom: 0;
+            }
+            p.state-full {
+              margin-top: -0.8rem;
+            }
+            p.state-full,
+            p.expires {
+              // display: none;
+              max-height: 0;
+              overflow-y: hidden;
+            }
+          // }
+>>>>>>> jm-policies
         }
         &.state-details {
           td {
@@ -472,6 +575,7 @@ $el-darkgray: #737373;
               padding: 1rem 1rem 0 2rem;
             }
             .state-details-list {
+<<<<<<< HEAD
               padding-top: 2rem;
               padding-bottom: 2rem;
               .last-updated {
@@ -489,6 +593,24 @@ $el-darkgray: #737373;
                 // flex-shrink: false;
                 label {
                   font-size: 1.6rem;
+=======
+              // padding-top: 2rem;
+              // padding-bottom: 2rem;
+              max-height: 0;
+              overflow-y: hidden;
+              .last-updated {
+                font-family: GT-Eesti-Display-Bold, sans-serif;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                color: #949494;
+                margin-top: 2.4rem;
+                margin-bottom: 0rem;
+              }
+              .state-policy {
+                label {
+                  font-size: 1.6rem;
+                  margin-bottom: 0.8rem;
+>>>>>>> jm-policies
                   font-family: Akkurat-Bold, sans-serif;
                   &:before {
                     content: '';
@@ -515,15 +637,31 @@ $el-darkgray: #737373;
                   font-size: 1.4rem; // 1.1rem;
                   font-family: Akkurat-regular, sans-serif;
                   width: 100%;
+<<<<<<< HEAD
                   @include media-breakpoint-up(md) {
                     width: 90%;
+=======
+                  max-width: 75%;
+                  margin-bottom: 1.6rem;
+                  @include media-breakpoint-up(md) {
+                    font-size: 1.5rem; 
+                    width: 90%;
+                    margin-bottom: 1.6rem;
+>>>>>>> jm-policies
                   }
                 }
               }
             }
             button {
               font-family: GT-Eesti-Display-Bold, sans-serif;
+<<<<<<< HEAD
               font-size: 1.6rem;
+=======
+              font-size: 1.5rem;
+              @include media-breakpoint-up(md) {
+                font-size: 1.6rem;
+              }
+>>>>>>> jm-policies
               text-transform: uppercase;
               color: $el-red;
               padding-right: 34px;
@@ -565,6 +703,20 @@ $el-darkgray: #737373;
             }
           }
         }
+<<<<<<< HEAD
+=======
+        // &.excerpt-only {
+        //   td {
+        //     .state-details-list,
+        //     .collapse-state-details {
+        //       max-height: 0;
+        //       overflow-y: hidden;
+        //       padding-top: 0;
+        //       padding-bottom: 0;
+        //     }
+        //   }
+        // }
+>>>>>>> jm-policies
       }
     }
   }
