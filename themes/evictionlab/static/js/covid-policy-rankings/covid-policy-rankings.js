@@ -87,49 +87,6 @@ $(document).ready(function () {
       $('button.expand-state-details').on('click select', function(e) {
         // console.log('click open, ', e.currentTarget);
         var $target = $(e.currentTarget);
-<<<<<<< HEAD
-        $target.hide();
-        $target.parent().parent('tr').prev('.state-text').removeClass('excerpt-only');
-        $target
-          // Select and hide panel contents.
-          .next('.state-details-list')
-          .show()
-          // Show and add listeners to collapse button.
-          .next('button.collapse-state-details')
-          .show()
-          .on('click select', function(e) {
-            // console.log('click collapse, ', e.currentTarget);
-            var $ctarget = $(e.currentTarget);
-            $ctarget.prev('.state-details-list').hide();
-            $ctarget.hide().unbind('click select');
-            $ctarget.parent().parent('tr').prev('.state-text').addClass('excerpt-only');
-            $target.show();
-            var state = $ctarget.data('state');
-            var top = $('tr[data-state="' + state + '"]').offset().top;
-            var fullHeight = window.innerHeight;
-            $([document.documentElement, document.body]).animate({
-              scrollTop: top - fullHeight*0.33
-            }, 1600);
-            // window.scrollTo({
-            //   top: top - fullHeight*0.33,
-            //   behavior: 'smooth',
-            // });
-            $('tr[data-state="' + state + '"]').focus();
-        })
-      })
-    },
-    handleStickyFilters: function() {
-      console.log('handleStickyFilters()');
-      var doSticky = false;
-      var filterOffset = null;
-      var $filters = $('#filters_panel .filters');
-      $(window).on('load', function() {
-        console.log('loaded');
-        if ($('div.mobile-filters').css('display') !== 'block') {
-          console.log('mobile filters is not shown.')
-          doSticky = true;
-          filterOffset = $filters.offset();
-=======
         // Remove excerpt-only class.
         // $target.parent().parent('tr').prev('.state-text').removeClass('excerpt-only');
         $target
@@ -245,34 +202,11 @@ $(document).ready(function () {
           doSticky = true;
           filterOffset = $filters.offset();
           tableOffset = $table.offset();
->>>>>>> jm-policies
         } else {
           doSticky = false;
         }
       })
       $(window).on('resize', function() {
-<<<<<<< HEAD
-        console.log('resized');
-        if ($('div.mobile-filters').css('display') !== 'block') {
-          console.log('mobile filters is not shown.')
-          doSticky = true;
-          filterOffset = $filters.offset();
-        } else {
-          doSticky = false;
-          // $filters.css('max-height', 'unset');
-        }
-      })
-      $(window).on('scroll', function() {
-        console.log('scrolled');
-        if (!!doSticky) {
-          console.log('doSticky === true, proceeding. filterOffset = ', filterOffset);
-          var wScrollTop = $(window).scrollTop();
-          console.log('wScrollTop, ', wScrollTop);
-          var headerHeight = $('header .header-wrapper').height();
-          console.log('headerHeight, ', headerHeight);
-          if (wScrollTop + headerHeight + 50 >= filterOffset.top) {
-            console.log('make the filter sticky');
-=======
         // console.log('resized');
         if ($('div.mobile-filters').css('display') !== 'block') {
           // console.log('mobile filters is not shown.')
@@ -294,17 +228,11 @@ $(document).ready(function () {
           // console.log('headerHeight, ', headerHeight);
           if (wScrollTop + headerHeight + 50 >= filterOffset.top) {
             // console.log('make the filter sticky');
->>>>>>> jm-policies
             $filters.css({
               position: 'sticky',
               top: headerHeight + 50,
               left: filterOffset.left
             })
-<<<<<<< HEAD
-          } else {
-            console.log('make the filter NOT sticky');
-          }
-=======
           }
           // if (wScrollTop + headerHeight + 50 >= tableOffset.top) {
           //   console.log('make the table sticky');
@@ -314,7 +242,6 @@ $(document).ready(function () {
           //     left: tableOffset.left
           //   })
           // }
->>>>>>> jm-policies
         }
       })
     },
@@ -341,11 +268,7 @@ $(document).ready(function () {
         }
       })
       // Table sort headings
-<<<<<<< HEAD
-      $table_headings = $('#states_table > thead > tr > td');
-=======
       $table_headings = $('#states_table > thead > tr > th');
->>>>>>> jm-policies
       $table_headings.on('click', function(e) {
         // console.log('sort clicked, ', e.currentTarget);
         // Change sort status for clicked element
